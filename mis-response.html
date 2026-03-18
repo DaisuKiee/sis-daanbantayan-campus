@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTU SIS — MIS Security Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="mis-style.css">
 </head>
 <body>
@@ -58,10 +59,10 @@
 
             <!-- Sidebar -->
             <div class="sidebar">
-                <div class="sidebar-item active">🔍 Log Checker</div>
-                <div class="sidebar-item">👤 Account Management</div>
-                <div class="sidebar-item">📋 Incident Reports</div>
-                <div class="sidebar-item">⚙ System Settings</div>
+                <div class="sidebar-item active"><i class="fas fa-search"></i> Log Checker</div>
+                <div class="sidebar-item"><i class="fas fa-user"></i> Account Management</div>
+                <div class="sidebar-item"><i class="fas fa-clipboard-list"></i> Incident Reports</div>
+                <div class="sidebar-item"><i class="fas fa-cog"></i> System Settings</div>
             </div>
 
             <!-- Main content -->
@@ -99,7 +100,7 @@
                         <!-- Security Alert -->
                         <div class="section-card alert-card" id="alert-card">
                             <div class="alert-banner">
-                                <span class="alert-icon">⚠</span>
+                                <span class="alert-icon"><i class="fas fa-exclamation-triangle"></i></span>
                                 <div>
                                     <div class="alert-title">Suspicious Login Detected</div>
                                     <div class="alert-sub">Unauthorized access attempt from an unrecognized location.</div>

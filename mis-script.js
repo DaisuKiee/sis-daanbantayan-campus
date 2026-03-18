@@ -131,21 +131,23 @@ function populateResults(s) {
         tbody.appendChild(tr);
     });
 
-    // Response actions
-    const grid = document.getElementById('actions-grid');
-    grid.innerHTML = '';
-    responseActions.forEach((action, i) => {
-        const card = document.createElement('div');
-        card.className = 'action-card';
-        card.id = `act-${i}`;
-        card.innerHTML = `<div class="action-check"></div><span>${action}</span>`;
-        grid.appendChild(card);
-        // Stagger the checkmarks
-        setTimeout(() => {
-            card.classList.add('done');
-            card.querySelector('.action-check').textContent = '✓';
-        }, 800 + i * 1200);
-    });
+    // Response actions (commented out - no actions-grid in HTML)
+    // const grid = document.getElementById('actions-grid');
+    // if (grid) {
+    //     grid.innerHTML = '';
+    //     responseActions.forEach((action, i) => {
+    //         const card = document.createElement('div');
+    //         card.className = 'action-card';
+    //         card.id = `act-${i}`;
+    //         card.innerHTML = `<div class="action-check"></div><span>${action}</span>`;
+    //         grid.appendChild(card);
+    //         // Stagger the checkmarks
+    //         setTimeout(() => {
+    //             card.classList.add('done');
+    //             card.querySelector('.action-check').textContent = '✓';
+    //         }, 800 + i * 1200);
+    //     });
+    // }
 
     document.getElementById('results-area').style.display = 'block';
     document.getElementById('results-area').scrollIntoView({ behavior: 'smooth' });
